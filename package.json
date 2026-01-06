@@ -1,10 +1,11 @@
 {
   "name": "code-search",
   "version": "0.1.0",
-  "description": "Ultra-simple npx code search tool with Jina embeddings and LanceDB",
+  "description": "Ultra-simple code search tool with Jina embeddings, LanceDB, and MCP protocol support",
   "type": "module",
   "bin": {
-    "code-search": "./bin/code-search.js"
+    "code-search": "./bin/code-search.js",
+    "code-search-mcp": "./mcp.js"
   },
   "main": "src/cli.js",
   "engines": {
@@ -14,15 +15,17 @@
     "search": "node ./bin/code-search.js"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.1",
     "@xenova/transformers": "^2.6.0",
-    "vectordb": "^0.1.8",
-    "fast-glob": "^3.3.2"
+    "fast-glob": "^3.3.2",
+    "vectordb": "^0.1.8"
   },
   "keywords": [
     "code-search",
     "embeddings",
     "vector-db",
     "jina",
-    "lancedb"
+    "lancedb",
+    "mcp"
   ]
 }
