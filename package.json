@@ -1,0 +1,28 @@
+{
+  "name": "code-search",
+  "version": "0.1.0",
+  "description": "Ultra-simple npx code search tool with Jina embeddings and LanceDB",
+  "type": "module",
+  "bin": {
+    "code-search": "./bin/code-search.js"
+  },
+  "main": "src/cli.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "search": "node ./bin/code-search.js"
+  },
+  "dependencies": {
+    "@xenova/transformers": "^2.6.0",
+    "vectordb": "^0.1.8",
+    "fast-glob": "^3.3.2"
+  },
+  "keywords": [
+    "code-search",
+    "embeddings",
+    "vector-db",
+    "jina",
+    "lancedb"
+  ]
+}
